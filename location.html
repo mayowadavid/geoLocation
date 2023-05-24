@@ -33,7 +33,7 @@
             };
 
             // Fetch country JSON for matched country code
-            const response = await fetch('location.json');
+            const response = await fetch('/location.json');
             const data = await response.json();
             const zoneData = data.zones.filter((z) => z.id === searchParams || z.aliases.includes(searchParams));
 
