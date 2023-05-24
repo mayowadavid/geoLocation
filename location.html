@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="mylocation flex_row mb10">
-        <p id="location">My time zone is</p>
+        <p class="mb6" id="location">My time zone is</p>
     </div>
     <script>
         (async () => {
@@ -43,7 +43,7 @@
             };
 
             // Concatenate timezone with DOM id
-            locationElement.innerHTML += ` ${searchParams} - We will fetch data by ${sessionData.countryName}`;
+            locationElement.innerHTML += ` ${searchParams} - We will fetch data by ${sessionData.countryName} or defualt data`;
 
             // Set a new timezone in sessionStorage
             sessionStorage.setItem('location', JSON.stringify(sessionData));
